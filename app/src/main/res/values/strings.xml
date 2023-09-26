@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">AppNoticesAdm</string>
+    <string name="titulo">Escreva uma Notícia</string>
+    <string name="titulo2">Titulo</string>
+    <string name="noticia">Notícia</string>
+    <string name="data">Data de publicação</string>
+    <string name="autor">Autor</string>
+    <string name="button">Publicar Notícia</string>
+</resources>

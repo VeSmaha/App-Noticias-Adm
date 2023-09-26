@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--ScrollView: Envolve o layout para quando girar a tela, ter o scroll
+match_parent: ocupa o espaço todo
+fillViewPort="true": sobra um pequeno espaço sem envelopar, para resolver, se conf essa propriedade
+xmlns:
+-->
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+    <!--Linear Layout: vertical, acomoda os itens um em cima do outro
+    width: match_parent, o comprimento ocupa toda a tela
+    height: wrap_content, a altura ocupa apenas a altura dos itens
+    -->
+<LinearLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/teal_200"
+    tools:context=".MainActivity">
+
+    <!--TextView: comprimento e altura ocupam apenas o espaço das letras
+    layout_gravity: center, deixa o titulo no centro
+-->
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:text="@string/titulo"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        />
+    <!--EditText: comprimento ocupa toda a tela, altura ocupa apenas o espaço das letras
+    maxLines="1", maximo de linhas de 1, nao pula pra outra linha
+
+-->
+
+    <EditText
+        android:id="@+id/editTitulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/titulo2"
+        android:padding="15dp"
+        android:background="@color/white"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:maxLines="1"
+        />
+
+    <!--EditText: compriemnto ocupa toda a tela, e altura, pra ficar maior, de 200
+    gravity: center, faz o texto hide ficar em cima e nao no meio
+    inputType: TextMultiLine, pode ser escrito em varias linhas, vai pulando pra outra
+
+-->
+
+    <EditText
+        android:id="@+id/editNoticia"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:hint="@string/noticia"
+        android:padding="15dp"
+        android:background="@color/white"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:gravity="start"
+        android:inputType="textImeMultiLine"
+        />
+
+    <!--EditText: comprimento ocupa toda a tela, e altura ocupa apenas po espaço do conteudo
+    maxLength="10", maximo de caracteres de 10
+-->
+    <EditText
+        android:id="@+id/editData"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/data"
+        android:padding="15dp"
+        android:background="@color/white"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:maxLength="10"
+        />
+    <!--EditText: comprimento ocupa toda a tela, e altura ocupa apenas po espaço do conteudo
+-->
+
+    <EditText
+        android:id="@+id/editAutor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/autor"
+        android:padding="15dp"
+        android:background="@color/white"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:maxLines="1"
+        />
+
+    <!--Button: comprimento ocupa toda a tela, e altura ocupa apenas po espaço do conteudo
+   textAllCaps="false", todas as letras não vão ser maiusculas
+-->
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/button"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        android:padding="15dp"
+        android:backgroundTint="@color/teal_700"
+        android:layout_margin="20dp"
+        />
+
+</LinearLayout>
+</ScrollView>
